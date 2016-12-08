@@ -1,0 +1,18 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "URL Shortening Microservice",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/AOXD/url-shortener.git"
+  },
+  "author": "AOXD",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
