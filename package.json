@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.14.0",
-    "express-handlebars": "^3.0.0",
+    "hogan": "^1.0.2",
     "mongodb": "^2.2.15",
     "path": "^0.12.7"
   }
