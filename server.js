@@ -3,10 +3,9 @@
 const express = require('express');
 const path = require('path');
 const mongo = require('mongodb').MongoClient;
-const hjs = require('hogan');
 
-// routes = require('./app/routes/index.js');
-//const api = require('./app/api/url-shortener.js');
+const routes = require('./app/routes/index.js');
+const api = require('./app/api/url-reducer.js');
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -17,7 +16,7 @@ mongo.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/tinyurl',
     else console.log('Successfully connected to MognoDB on port 27017!');
 
     app.set('views', path.join(__dirname, 'views'));
-    app.set('view-engine', 'hjs');
+    app.set('view engine', 'pug');
 
     db.createCollection("sites", {
         capped: true,

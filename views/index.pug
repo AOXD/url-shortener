@@ -1,0 +1,11 @@
+extends layout
+
+block main
+  .container
+    .text-center
+      h1= appname
+      if (err)
+        .h2(style="color: red")= err
+
+    p.text-muted Your input URL should look like this:
+      code herokuapp.com/new/www://your-url-here.com/
