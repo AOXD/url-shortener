@@ -1,0 +1,9 @@
+{
+  "name": "URL Shortener Microservice",
+  "repository": "github.com/AOXD/url-shortener.git",
+  "keywords": ["node", "express", "url-shortener-microservice"],
+  "env": {
+    "APP_URL": "https://url-shortee.heroku.com/",
+    "MONGOLAB_URI": ""
+  }
+}
